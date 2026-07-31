@@ -13,7 +13,7 @@ public class NotificationConsumerImpl implements NotificationConsumer {
 
     @Override
     @RabbitListener(queues = RabbitMQConstants.NOTIFICATION_QUEUE)
-    public void consumerNotification(NotificationDTO notificationDTO) {
+    public void consumeNotification(NotificationDTO notificationDTO) {
         log.info("Received Notification: {}", notificationDTO);
     }
 }
