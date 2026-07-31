@@ -4,5 +4,5 @@ import aj.notification_system.dto.domain.NotificationDTO;
 
 public interface NotificationConsumer {
 
-    void consumerNotification(NotificationDTO notificationDTO);
+    void consumeNotification(NotificationDTO notificationDTO);
 }
